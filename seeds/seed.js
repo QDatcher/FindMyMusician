@@ -9,7 +9,6 @@ const seedDatabase = async () => {
     const users = await User.bulkCreate(userData,{
         individualHooks: true,
         returning: true,
-        user_id: users[Math.floor(Math.random() * users.length)].id,
     });
     process.exit(0);
 };
