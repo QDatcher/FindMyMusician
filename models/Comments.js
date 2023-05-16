@@ -46,3 +46,5 @@ Comments.init(
       modelName: 'posts',
     }
 );
+
+module.exports = Comments;
