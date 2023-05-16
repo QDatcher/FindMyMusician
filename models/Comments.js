@@ -39,7 +39,7 @@ Comments.init(
       timestamps: false,
       freezeTableName: true,
       underscored: true,
-      modelName: 'posts',
+      modelName: 'comments',
     }
 );
 
