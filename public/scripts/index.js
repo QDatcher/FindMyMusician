@@ -1,10 +1,14 @@
-var logIn = document.getElementById('logIn');
-var signUp = document.getElementById('signUp');
+var logIn = document.getElementById("logIn");
+var signUp = document.getElementById("signUp");
 
-function logIn() {
+function logInFunction() {
     window.location.href = "signin.html";
-}
+};
 
-function signUp() {
+logIn.addEventListener("click", logInFunction);
+
+function signUpFunction() {
     window.location.href = "signUp.html";
-}
+};
+
+signUp.addEventListener("click", signUpFunction);
