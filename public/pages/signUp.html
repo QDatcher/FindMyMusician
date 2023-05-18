@@ -20,6 +20,10 @@
     </header>
     <section id="body">
         <form id="signUpForm">
+            <form id="profile-pic" action='/api/images' method="post" enctype="multipart/form-data">
+                Profile Pic: <input type='file' name='image' />
+            </form>
+            <label for="lastName">First Name:</label>
             <input type="text" id="firstName" name="firstName"><br>
             <label for="lastName">Last Name:</label>
             <input type="text" id="lastName" name="lastName"><br>
