@@ -17,14 +17,15 @@
 </head>
 
 <body>
-    <header>
+    <header class="grid text-center">
+        <h1 id="title">FindMyMusician</h1>
         <nav>
             <button id="logIn" class="homeScreen">Log In</button>
             <button id="signUp" class="homeScreen">Sign Up</button>
         </nav>
-        <h1 id="title">FindMyMusician</h1>
     </header>
     <section id="accountScreen">
+        <section class="row justify-content-center text-center">
         <h2 id="username">{{username}}</h2>
         <ul id="accountInfo">
             <li id="name">{{firstName}}{{lastName}}</li>
@@ -33,6 +34,7 @@
             </li>
             <li id="links">{{links}}</li>
         </ul>
+        </section>
     </section>
 
     <script 
