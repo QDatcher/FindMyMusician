@@ -6,18 +6,20 @@ const multer = require("multer");
 const cloudinary = require("cloudinary");
 const cloudinaryStorage = require("multer-storage-cloudinary");
 
+//cloudinary configuration
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
   api_key: process.env.API_KEY,
   api_secret: process.env.API_SECRET
   });
-  const storage = cloudinaryStorage({
+//storage for the images
+const storage = cloudinaryStorage({
   cloudinary: cloudinary,
   folder: "demo",
   allowedFormats: ["jpg", "png"],
   transformation: [{ width: 500, height: 500, crop: "limit" }]
-  });
-  const parser = multer({ storage: storage });
+});
+const parser = multer({ storage: storage });
 
 router.post('/', async (req, res) => {
   try {
@@ -32,4 +34,15 @@ router.post('/', async (req, res) => {
   } catch (err) {
     res.status(400).json(err);
   }
+});
+
+//posting images in the signup page for the profle pic
+router.post('/api/signup', parser.single("image"), (req, res) => {
+  console.log(req.file) // to see what is returned to you
+  const image = {};
+  image.url = req.file.url;
+  image.id = req.file.public_id;
+  Image.create(image) // save image information in database
+    .then(newImage => res.json(newImage))
+    .catch(err => console.log(err));
 });
