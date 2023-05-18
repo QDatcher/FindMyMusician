@@ -1,0 +1,6 @@
+/* this is how ya make a box borderrr*/
+#homeScreen {
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px solid black;
+}
