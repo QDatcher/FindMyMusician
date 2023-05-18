@@ -33,14 +33,14 @@ User.init(
         allowNull: false,
         unique: true,
         validate: {
-          isEmail: true,
+          isEmail: true
         },
       },
       password: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          len: [8],
+          len: [8]
         },
       },
       bio: {
@@ -54,6 +54,9 @@ User.init(
       },
       profile_pic: {
         type: DataTypes.STRING,
+        validate: {
+          URL: true
+        }
       }
     },
     {
