@@ -1,6 +1,8 @@
 //Getting necessary elements from the HTML to the JS
 var username = document.getElementById("username");
 var accountInfo = document.getElementById("accountInfo");
+var home = document.getElementById("home");
+var myAccount = document.getElementById("myAccount");
 
 //Event Handler to get to homepage from the account page
 const homePageHandler = async (event) => {
@@ -27,3 +29,6 @@ const homePageHandler = async (event) => {
         }
     }
 } 
+
+//Adding the handler to the home button
+home.addEventListener('click', homePageHandler);
