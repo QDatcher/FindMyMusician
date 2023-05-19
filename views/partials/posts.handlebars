@@ -1,0 +1,21 @@
+<section id="postScreen">
+    {{#each posts as |post|}}
+    {{#if post.post}}
+    <section></section>
+    <section class="href">
+        <a href="/posts/{{post.id}}">
+            <header class="postTitle">
+                {{title}}<br>
+                <div class="postDate">{{date_created}}</div>
+            </header>
+            <hr>
+            <section class="post">
+                <p class="postContent">{{text_content}}</p>
+                <h5 class="postTag">{{tag}}</h5>
+            </section>
+            <section id="replies">
+                
+            </section>
+        </a>
+    </section>
+</section>
