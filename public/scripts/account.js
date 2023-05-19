@@ -2,4 +2,15 @@
 var username = document.getElementById("username");
 var accountInfo = document.getElementById("accountInfo");
 
-//TODO: get the database information and query the correct account information (username) (location,bio,links) then append
+var home = document.getElementById("logIn");
+var myAccount = document.getElementById("signUp");
+
+function homePage() {
+    window.location.href = "/views/index.handlebars";
+};
+home.addEventListener("click", homePage);
+
+function myAccount() {
+    windows.location.href = "/views/account.handlebars";
+};
+myAccount.addEventListener("click", myAccount);
