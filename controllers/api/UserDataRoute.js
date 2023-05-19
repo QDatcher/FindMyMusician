@@ -43,7 +43,7 @@ router.post('/api/signup', parser.single("image"), (req, res) => {
   const image = {};
   image.url = req.file.url;
   image.id = req.file.public_id;
-  Image.create(image) // save image information in database
+  User.create(image) // save image information in database
     .then(newImage => res.json(newImage))
     .catch(err => console.log(err));
 });
