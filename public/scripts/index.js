@@ -2,13 +2,13 @@ var logIn = document.getElementById("logIn");
 var signUp = document.getElementById("signUp");
 
 function logInFunction() {
-    window.location.href = "signin.html";
+    document.location.replace('/login')
 };
 
 logIn.addEventListener("click", logInFunction);
 
 function signUpFunction() {
-    window.location.href = "signUp.html";
+    document.location.replace('/signup')
 };
 
 signUp.addEventListener("click", signUpFunction);
