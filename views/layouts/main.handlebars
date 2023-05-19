@@ -35,13 +35,8 @@
         <hr class="solid">
 
         <section id="postFeed">
-            {{#each posts as |post|}}
-            {{#lt @index 4}}
-            <h4>{{post.title}}</h4>
-            <p>{{post.text_content}}</p>
-            <h6>{{post.tag}}</h6>
-            {{/each}}
-        </section>
+            {{{body}}}
+    
 
     </section>
 
