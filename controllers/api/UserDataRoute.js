@@ -21,6 +21,7 @@ const storage = cloudinaryStorage({
 });
 const parser = multer({ storage: storage });
 
+//creating a user
 router.post('/', async (req, res) => {
   try {
     const userData = await User.create(req.body);
