@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
         include: [
           {
             model: User,
-            attributes: ['name', 'id'],
+            attributes: ['username', 'id'],
           },
           {
             model: Comments
@@ -24,8 +24,7 @@ router.get('/', async (req, res) => {
   
       // Pass serialized data and session flag into template
       res.render('welcome', { 
-        posts, 
-        logged_in: req.session.logged_in 
+        posts 
       });
     } catch (err) {
       res.status(500).json(err);
@@ -35,7 +34,7 @@ router.get('/', async (req, res) => {
   router.get('/login', (req, res) => {
     // If the user is already logged in, redirect the request to another route
     if (req.session.logged_in) {
-      res.redirect('/account');
+      res.redirect('/profile');
       return;
     }
   
