@@ -1,35 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/style.css">
-    <title>Find My Musician</title>
-
-</head>
-
-<body>
-    <header>
-        <nav>
-            <button id="logIn" class="homeScreen">Log In</button>
-            <button id="signUp" class="homeScreen">Sign Up</button>
-        </nav>
-        <h1 id="title">FindMyMusician</h1>
-    </header>
     <section id="accountScreen">
-        <h2 id="username">{{username}}</h2>
-        <ul id="accountInfo">
-            <li id="name">{{first_name}}{{last_name}}</li>
-            <li id="bio">
+        <ul id="accountInfo" class="list-group list-group-flush">
+            <li id="name" class="list-group-item">{{first_name}}{{last_name}}</li>
+            <li id="bio" class="list-group-item">
                 <p>{{bio}}</p>
             </li>
-            <li id="links">{{project_links}}</li>
+            <li id="links" class="list-group-item">{{project_links}}</li>
         </ul>
     </section>
 
     <script src="../scripts/account.js"></script>
 </body>
-
-</html>

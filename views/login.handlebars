@@ -1,16 +1,22 @@
-
-    <section id="signIn">
-        <div class="shape">
-            <h2>Login</h2>
-            <form id="loginForm">
-                <label for="username">Username:</label>
-                <input type="text" id="username"><br>
-                <label for="password">Password:</label>
-                <input type="text" id="password"><br>
-                <input type="submit" value="login" id="loginSubmit">
-            </form>
+<div class="container">
+    <div class="row">
+        <div class="col d-flex justify-content-center align-items-center vh-100">
+            <section id="signIn" class="text-center">
+                <div class="shape">
+                    <h2 class="text-center">Login</h2>
+                    <form id="loginForm">
+                        <label for="username" class="col-sm-2 col-form-label col-form-label-lg">Username:</label>
+                        <input type="text" id="username" class="form-control form-control-lg"
+                            placeholder="Username"><br>
+                        <label for="password" class="col-sm-2 col-form-label col-form-label-lg">Password:</label>
+                        <input type="text" id="password" class="form-control form-control-lg"
+                            placeholder="Password"><br>
+                        <input type="submit" value="login" class="btn btn-primary btn-lg">
+                    </form>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
+</div>
 
     <script src="./scripts/login.js"></script>
-
