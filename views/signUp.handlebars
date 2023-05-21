@@ -1,22 +1,35 @@
 <body>
-     <section id="body">
+    <section id="body" class="text-center">
         <h2>Sign Up</h2>
         <form id="signUpForm">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName"><br>
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName"><br>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username"><br>
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email"><br>
-            <label for="password">Password:</label>
-            <input type="text" id="password" class="password"><br>
-            <label for="bio">Biography:</label>
-            <input type="text" id="bio" class="bio"><br>
-            <label for="links">Links:</label>
-            <input type="text" id="link" class="link"><br>
-            <input type="submit" value="Sign Up">
+            <div class="input-group">
+                <span class="input-group-text">Your Name</span>
+                <input type="text" id="firstName" name="firstName" class="form-control" placeholder="First">
+                <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Last">
+            </div><br>
+            <div class="input-group">
+                <span class="input-group-text">Username:</span>
+                <input type="text" id="username" name="username" class="form-control" placeholder="Username">
+            </div><br>
+            <div class="input-group">
+                <span class="input-group-text">
+                    <span class="bi bi-envelope-fill"></span>
+                    <input type="text" id="email" name="email" placeholder="Email"></span>
+            </div><br>
+            <div class="input-group">
+                <span class="input-group-text">
+                    <span class="bi bi-lock-fill"></span>
+                    <input type="text" id="password" class="password" placeholder="Password"></span>
+            </div><br>
+            <div class="input-group">
+                <span class="input-group-text">
+                    <span class="bi-person"></span>
+                    <input type="text" id="bio" class="bio" placeholder="Tell us a little about yourself!"></span>
+            </div><br>
+            <div class="input-group">
+                <span class="input-group-text">Project Links:</span>
+                <input type="text" id="link" class="link" placeholder="URL"><br>
+                <input type="submit" value="Sign Up">
         </form>
     </section>
 

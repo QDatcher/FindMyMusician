@@ -1,6 +1,39 @@
-/* this is how ya make a box borderrr*/
-#homeScreen {
-    margin-left: 10%;
-    margin-right: 10%;
-    border: 2px solid black;
+/*Making a constant square shape that will hold all html body throughout the pages*/
+
+.shape{
+    height: 70vh;
+    width: 90vw;
+    border: 4px solid black;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-color: white;
+}
+body {
+    background-color: rgb(83, 203, 72);
+    height: 70vh;
+    width: 90vw;
+}
+
+/*Button Styling*/
+.homeScreen {
+
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    padding: .25vh .75vw;
+    border: 0;
+    color: #fff;
+    font-size: 1.75vh;
+    border: 2px solid transparent;
+    border-color: #000;
+    color: #000;
+    background: transparent;
+    font-weight: 800;
+    line-height: 1.875em;
+    transition: background, color .1s ease-in-out;
+}
+
+.homeScreen:hover {
+    background-color: #000;
+    color: #fff;
 }
