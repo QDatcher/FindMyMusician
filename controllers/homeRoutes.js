@@ -74,9 +74,9 @@ router.get('/profile', withAuth, async (req, res) => {
     }
   });
 
-  router.get('/post/:id', async (req, res) => {
+  router.get('/posts/:id', async (req, res) => {
     try {
-      const postData = await Project.findByPk(req.params.id, {
+      const postData = await Posts.findByPk(req.params.id, {
         include: [
           {
             model: User,
