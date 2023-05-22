@@ -12,7 +12,7 @@ const commentFormHandler = async (event) => {
     
         if (response.ok) {
             console.log('comment generated')
-        //   document.location.reload();
+          document.location.reload();
 
         } else {
             console.log('comment failed')
