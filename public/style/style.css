@@ -1,5 +1,11 @@
 /*Making a constant square shape that will hold all html body throughout the pages*/
 
+/* Find My Musician title using custom google font*/
+#title {
+    font-family: "Oswald", sans-serif;
+    font-size: 55px;
+}
+
 .shape {
     height: 70vh;
     width: 90vw;
@@ -59,4 +65,15 @@ body {
 .homeScreen:hover {
     background-color: #000;
     color: #fff;
+}
+
+/* Post stylings */
+
+.title{
+    font-weight: bold;
+}
+
+.postTag {
+    color: gray;
+    font-size: 10px;
 }
