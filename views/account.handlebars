@@ -1,13 +1,15 @@
-    <section id="accountScreen">
-        <h2>Account Details</h2>
-        <ul id="accountInfo" class="list-group list-group-flush">
-            <li id="name" class="list-group-item">{{first_name}}{{last_name}}</li>
-            <li id="bio" class="list-group-item">
-                <p>{{bio}}</p>
-            </li>
-            <li id="links" class="list-group-item">{{project_links}}</li>
-        </ul>
-    </section>
+<section id="accountScreen">
+    <h2>Account Details</h2>
+    <h2>{{username}}</h2>
+    <ul id="accountInfo" class="list-group list-group-flush">
+        <li id="name" class="list-group-item">Users Name:{{first_name}}{{last_name}}</li>
+        <li id="bio" class="list-group-item">
+            <h3>Bio:</h3><br>
+            <p>{{bio}}</p>
+        </li>
+        <li id="links" class="list-group-item">Project Links:{{project_links}}</li>
+    </ul>
+</section>
 
-    <script src="../scripts/account.js"></script>
+<script src="../scripts/account.js"></script>
 </body>

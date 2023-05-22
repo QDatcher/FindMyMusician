@@ -33,6 +33,15 @@ body {
     text-decoration: none;
 }
 
+.href a:hover {
+    color: rgb(40, 36, 36);
+    text-decoration: underline;
+}
+
+.href a:visited {
+    text-decoration: underline;
+}
+
 .postBreak {
     color: black;
 }
