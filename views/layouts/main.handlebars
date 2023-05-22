@@ -16,8 +16,13 @@
 
         <h1 id="title">FindMyMusician</h1>
         <nav>
+            {{#if logged_in}}
+            <a id="profile" href="/profile">profile</a> |
+            <button id="logout">logout</button>
+            {{else}}
             <button id="logIn" class="homeScreen">Log In</button>
             <button id="signUp" class="homeScreen">Sign Up</button>
+            {{/if}}
         </nav>
     </header>
     <section id="homeScreen">
