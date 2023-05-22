@@ -1,6 +1,6 @@
 <section id="postScreen">
 
-  
+
     <section class="href">
         <a href="/posts/{{id}}">
             <header class="postTitle">
@@ -13,8 +13,9 @@
                 <h5 class="postTag">{{tag}}</h5>
             </section>
             <section id="replies">
+                {{#each comments as |comment|}}
                 {{>(comments)}}
-                
+                {{/each}}
             </section>
         </a>
     </section>
