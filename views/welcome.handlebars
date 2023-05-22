@@ -19,6 +19,8 @@
         </form>
 
     </section>
+    <button id="make-post" class="btn btn-primary">Make Post</button>
+    <button id="hide-post-maker" class="btn btn-primary">Hide Post Maker</button>
     {{else}}
 
     <section class="row justify-content-center text-center" id="welcomeText">
@@ -38,7 +40,7 @@
     <hr class="solid">
 
     <section id="postFeed">
-
+        <h2>Posts:</h2>
         {{#each posts as |post|}}
         {{!-- console.log(posts) --}}
         {{> post-details}}
