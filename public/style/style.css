@@ -6,6 +6,11 @@
     font-size: 55px;
 }
 
+/* post and comment content */
+.content {
+    font-style: italic;
+}
+
 .shape {
     height: 70vh;
     width: 90vw;
