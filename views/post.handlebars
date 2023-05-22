@@ -3,14 +3,22 @@
 
     <section class="href">
         <a href="/posts/{{id}}">
-            <header class="postTitle">
-                {{title}}<br>
-            </header>
+            <section>
+                <header class="postTitle">
+                    {{title}}<br>
+                </header>
+                <header class="postTitle">
+                    {{title}}<br>
+                    <div class="postDate">{{date_created}}</div>
+                </header>
+                <p class="postContent">{{text_content}}</p>
+                <h5 class="postTag">{{tag}}</h5>
 
-            <section id="replies">
-                {{#each comments as |comment|}}
-                {{>(comments)}}
-                {{/each}}
+                <section id="replies">
+                    {{#each comments as |comment|}}
+                    {{>(comments)}}
+                    {{/each}}
+                </section>
             </section>
         </a>
     </section>
