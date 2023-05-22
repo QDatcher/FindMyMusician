@@ -15,6 +15,10 @@ body {
     width: 90vw;
 }
 
+#header {
+    margin-left: 5vw;
+}
+
 #ipod {
     height: 23vh;
 }
