@@ -15,6 +15,10 @@ body {
     width: 90vw;
 }
 
+#ipod {
+    height: 23vh;
+}
+
 #title a {
     color: black;
     text-decoration: none;
