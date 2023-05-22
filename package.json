@@ -18,8 +18,5 @@
     "express-session": "^1.17.3",
     "mysql2": "^3.3.0",
     "sequelize": "^6.31.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.3"
   }
 }
