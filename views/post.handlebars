@@ -10,6 +10,19 @@
                 <p class="postContent">{{text_content}}</p>
                 <h5 class="postTag">{{tag}}</h5>
 
+                <hr>
+
+                {{#if logged_in}}
+                <div>
+                    <form id="commentForm">
+                        <label for="commentContent">Leave A Comment</label>
+                        <textarea class="form-control form-control-lg" id="postContent" rows="2"
+                        placeholder="Enter post content"></textarea>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                {{/if}}
+
                 <section id="replies">
                     <h3>Comments</h3>
                     {{#each comments as |comment|}}

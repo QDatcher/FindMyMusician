@@ -16,6 +16,7 @@ router.get('/', async (req, res) => {
             model: Comments
           }
         ],
+        order: [['date_created', 'DESC']]
       });
   
       // Serialize data so the template can read it
@@ -83,6 +84,9 @@ router.get('/profile', withAuth, async (req, res) => {
             model: User,
             attributes: ['username'],
           },
+          {
+            model: Comments
+          }
         ],
       });
       
