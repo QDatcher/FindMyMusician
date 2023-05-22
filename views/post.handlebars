@@ -14,7 +14,7 @@
 
                 {{#if logged_in}}
                 <div>
-                    <form id="commentForm">
+                    <form id="commentForm" data-postID="{{id}}">
                         <label for="commentContent">Leave A Comment</label>
                         <textarea class="form-control form-control-lg" id="commentContent" rows="2"
                         placeholder="Enter comment"></textarea>
