@@ -1,7 +1,7 @@
 const commentFormHandler = async (event) => {
     event.preventDefault();
 
-    const text_content = document.getElementById('postTitle').value.trim();
+    const text_content = document.getElementById('commentContent').value.trim();
     
     if (text_content && text_content.length > 0) {
         const response = await fetch('/api/comments/', {
@@ -12,7 +12,7 @@ const commentFormHandler = async (event) => {
     
         if (response.ok) {
             console.log('comment generated')
-          document.location.reload();
+        //   document.location.reload();
 
         } else {
             console.log('comment failed')
