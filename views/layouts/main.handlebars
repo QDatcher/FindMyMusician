@@ -13,17 +13,25 @@
 
 <body>
     <header class="grid text-center d-flex justify-content-center align-items-center">
-        <h1 id="title"><a href="/">FindMyMusician</a></h1>
-        <nav>
-            {{#if logged_in}}
-            <a id="profile" href="/profile">profile</a> |
-            <button id="logout">logout</button>
-            {{else}}
-            <button id="logIn" class="homeScreen">Log In</button>
-            <button id="signUp" class="homeScreen">Sign Up</button>
-            {{/if}}
-        </nav>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h1 id="title"><a href="/">FindMyMusician</a></h1>
+                    <br>
+                    <nav>
+                        {{#if logged_in}}
+                        <a id="profile" href="/profile">profile</a> |
+                        <button id="logout">logout</button>
+                        {{else}}
+                        <button id="logIn" class="homeScreen">Log In</button>
+                        <button id="signUp" class="homeScreen">Sign Up</button>
+                        {{/if}}
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
+
 
     <section id="homeScreen">
         <div class="shape">
