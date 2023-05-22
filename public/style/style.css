@@ -20,6 +20,15 @@ body {
     text-decoration: none;
 }
 
+#href a {
+    color: black;
+    text-decoration: none;
+}
+
+.postBreak {
+    color: black;
+}
+
 /*Button Styling*/
 .homeScreen {
 
