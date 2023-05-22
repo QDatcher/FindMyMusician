@@ -2,11 +2,7 @@
 
 
     <section class="href">
-        <a href="/posts/{{id}}">
             <section>
-                <header class="postTitle">
-                    {{title}}<br>
-                </header>
                 <header class="postTitle">
                     {{title}}<br>
                     <div class="postDate">{{date_created}}</div>
@@ -15,11 +11,11 @@
                 <h5 class="postTag">{{tag}}</h5>
 
                 <section id="replies">
+                    <h3>Comments</h3>
                     {{#each comments as |comment|}}
-                    {{>(comments)}}
+                    {{> comments }}
                     {{/each}}
                 </section>
             </section>
-        </a>
     </section>
 </section>

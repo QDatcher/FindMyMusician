@@ -13,7 +13,7 @@ const postFormHandler = async (event) => {
     
         if (response.ok) {
             console.log('post generated')
-          document.location.replace('/profile');
+          document.location.replace('/');
 
         } else {
             console.log('post failed')
