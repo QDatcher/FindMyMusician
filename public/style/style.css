@@ -37,3 +37,11 @@ body {
     background-color: #000;
     color: #fff;
 }
+
+/* Post stylings */
+
+.postTag {
+    color: gray;
+    font-size: 10px;
+}
+
