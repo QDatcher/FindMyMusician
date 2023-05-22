@@ -4,10 +4,10 @@
     <section class="href">
             <section>
                 <header class="postTitle">
-                    {{title}}<br>
+                    <h3 class="title">{{title}}</h3><br>
                     <div class="postDate">{{date_created}}</div>
                 </header>
-                <p class="postContent">{{text_content}}</p>
+                <p class="content">{{text_content}}</p>
                 <h5 class="postTag">{{tag}}</h5>
 
                 <hr>
@@ -24,7 +24,7 @@
                 {{/if}}
 
                 <section id="replies">
-                    <h3>Comments</h3>
+                    <h4>Comments</h4>
                     {{#each comments as |comment|}}
                     {{> comments }}
                     {{/each}}
