@@ -2,6 +2,7 @@
 
 
     <section class="href">
+
         <section>
             <header class="postTitle">
                 <h2>{{title}}<br></h2>
@@ -10,6 +11,7 @@
             <hr>
             <p class="postContent">{{text_content}}</p>
             <h5 class="postTag">{{tag}}</h5>
+
 
             <hr>
 
@@ -24,11 +26,14 @@
             </div>
             {{/if}}
 
-            <section id="replies">
-                <h3>Comments</h3>
-                {{#each comments as |comment|}}
-                {{> comments }}
-                {{/each}}
+
+                <section id="replies">
+                    <h4>Comments</h4>
+                    {{#each comments as |comment|}}
+                    {{> comments }}
+                    {{/each}}
+                </section>
+
             </section>
         </section>
     </section>
