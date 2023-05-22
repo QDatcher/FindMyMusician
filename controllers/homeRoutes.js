@@ -76,6 +76,22 @@ router.get('/profile', withAuth, async (req, res) => {
     }
   });
 
+  router.get('/profile/:id', async (req, res) => {
+    try {
+      const userData = await User.findByPk(req.params.id);
+      
+  
+      const user = userData.get({ plain: true });
+  
+      res.render('account', {
+        ...user,
+        logged_in: req.session.logged_in
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
   router.get('/posts/:id', async (req, res) => {
     try {
       const postData = await Posts.findByPk(req.params.id, {
