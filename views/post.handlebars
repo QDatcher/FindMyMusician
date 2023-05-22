@@ -2,11 +2,7 @@
 
 
     <section class="href">
-        <a href="/posts/{{id}}">
             <section>
-                <header class="postTitle">
-                    {{title}}<br>
-                </header>
                 <header class="postTitle">
                     {{title}}<br>
                     <div class="postDate">{{date_created}}</div>
@@ -14,12 +10,27 @@
                 <p class="postContent">{{text_content}}</p>
                 <h5 class="postTag">{{tag}}</h5>
 
+                <hr>
+
+                {{#if logged_in}}
+                <div>
+                    <form id="commentForm" data-postID="{{id}}">
+                        <label for="commentContent">Leave A Comment</label>
+                        <textarea class="form-control form-control-lg" id="commentContent" rows="2"
+                        placeholder="Enter comment"></textarea>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                {{/if}}
+
                 <section id="replies">
+                    <h3>Comments</h3>
                     {{#each comments as |comment|}}
-                    {{>(comments)}}
+                    {{> comments }}
                     {{/each}}
                 </section>
             </section>
-        </a>
     </section>
 </section>
+
+<script src="../scripts/comment.js"></script>
